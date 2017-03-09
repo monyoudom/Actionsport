@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="{% url 'playground'  %}"  method="post">
+{% csrf_token %}
+Name Of Playground <input type="text" name="name_playground" value=""><br>
+Descition PlayGround <input type="text" name="descition_playground" value=""><br>
+Kind Of Sport <input type="text" name="kind_of_sport" value=""><br>
+Location Of Playground <input type="text" name="Location_playground" value=""><br>
+
+
+
+
+<input type="submit" value="Submit">
+</form>
+
+
+
+</body>
+</html>

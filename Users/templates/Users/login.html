@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>{{error_message}}</p>
+<form action="{% url 'login'  %}"  method="post">
+{% csrf_token %}
+
+Username : <input type="text" name="username" value=""><br>
+Passwords : <input type="password" name="password" value=""><br>
+
+<input type="submit" value="Submit">
+</form>
+<a href="{% url 'resigster' %}">Regiseter</a>
+
+
+</body>
+</html>
